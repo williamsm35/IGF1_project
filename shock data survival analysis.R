@@ -2,7 +2,6 @@
 #Year long DO mice survival analysis
 # Maddy Williams
 # June 22, 2016
-##############
 
 
 # Making data more easily usable
@@ -225,17 +224,17 @@ pairs(year_long_surv[,c(10,11,12,13)],
       diag.panel = panel.hist)
 
 # BW matrix
-pairs(year_long_surv[,c(4,7,10)],
+pairs(year_long_surv[,c(4,7,10,13)],
       use = "pairwise.complete.obs", 
       upper.panel = panel.cor, 
       diag.panel = panel.hist)
 # Glu matrix
-pairs(year_long_surv[,c(5,8,11)],
+pairs(year_long_surv[,c(5,8,11,13)],
       use = "pairwise.complete.obs", 
       upper.panel = panel.cor, 
       diag.panel = panel.hist)
 # IGF1 matrix
-pairs(year_long_surv[,c(6,9,12)],
+pairs(year_long_surv[,c(6,9,12,13)],
       use = "pairwise.complete.obs", 
       upper.panel = panel.cor, 
       diag.panel = panel.hist)
